@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/sreda_react_website/static/css/main.20eddd49.chunk.css",
+    "main.css": "/sreda_react_website/static/css/main.e8746406.chunk.css",
     "main.js": "/sreda_react_website/static/js/main.5cd28ca5.chunk.js",
     "main.js.map": "/sreda_react_website/static/js/main.5cd28ca5.chunk.js.map",
     "runtime-main.js": "/sreda_react_website/static/js/runtime-main.a1acc1e2.js",
@@ -8,7 +8,7 @@
     "static/js/2.49986e54.chunk.js": "/sreda_react_website/static/js/2.49986e54.chunk.js",
     "static/js/2.49986e54.chunk.js.map": "/sreda_react_website/static/js/2.49986e54.chunk.js.map",
     "index.html": "/sreda_react_website/index.html",
-    "static/css/main.20eddd49.chunk.css.map": "/sreda_react_website/static/css/main.20eddd49.chunk.css.map",
+    "static/css/main.e8746406.chunk.css.map": "/sreda_react_website/static/css/main.e8746406.chunk.css.map",
     "static/js/2.49986e54.chunk.js.LICENSE.txt": "/sreda_react_website/static/js/2.49986e54.chunk.js.LICENSE.txt",
     "static/media/index.css": "/sreda_react_website/static/media/Gilroy-Semibold.7726b19d.woff2",
     "static/media/advantages.css": "/sreda_react_website/static/media/line-advantages.250ea456.svg",
@@ -24,7 +24,7 @@
   "entrypoints": [
     "static/js/runtime-main.a1acc1e2.js",
     "static/js/2.49986e54.chunk.js",
-    "static/css/main.20eddd49.chunk.css",
+    "static/css/main.e8746406.chunk.css",
     "static/js/main.5cd28ca5.chunk.js"
   ]
 }
