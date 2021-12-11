@@ -29,12 +29,13 @@
   color: #6EA527;
   cursor: pointer;
   margin-right: 47px;
+  transition: color 0.15s ease-in-out;
 }
 .contacts__city img {
   margin-right: 8px;
 }
 .contacts__city:hover {
-  text-decoration: underline;
+  color: #333333;
 }
 .contacts {
   display: flex;
@@ -49,9 +50,10 @@
   color: #474747;
   margin-right: 24px;
   position: relative;
+  transition: color 0.15s ease-in-out;
 }
 .contacts__phone:hover {
-  text-decoration: underline;
+  color: #6EA527;
 }
 .contacts__phone::before {
   content: "";
@@ -67,8 +69,7 @@
   padding: 6.5px 24px;
   border-radius: 34px;
   border: 1px solid #FFFFFF;
-  transition: 0.15s background-color ease-in-out;
-  transition: 0.15s border-color ease-in-out;
+  transition: 0.2s background-color ease-in-out, 0.2s border-color ease-in-out;
 }
 .social-media-link:hover {
   background-color: #EBF8DC;
@@ -87,11 +88,24 @@
   padding: 4px 4px 4px 24px;
   column-gap: 40px;
 }
-.menu__icon:hover svg {
+.menu__icon svg,
+.menu__icon path {
+  transition: all 0.15s ease-in-out;
+}
+.menu__icon:nth-child(1):hover path {
   stroke: #6EA527;
 }
-.menu__icon:hover path {
-  stroke: #6EA527;
+.menu__icon:nth-child(2):hover path {
+  fill: #6EA527;
+}
+.menu__icon:nth-child(3):hover svg {
+  fill: transparent;
+}
+.menu__icon:nth-child(3):hover path[fill-rule="evenodd"] {
+  fill: #6EA527;
+}
+.menu__icon:nth-child(4):hover path {
+  fill: #6EA527;
 }
 .menu__icon_card {
   position: relative;
