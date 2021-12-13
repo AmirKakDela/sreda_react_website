@@ -11,9 +11,9 @@ const MainPage = () => {
         <div className="page">
             <Header/>
             <FirstSection/>
-            {/*<Advantages/>*/}
-            {/*<OurFair/>*/}
-            {/*<PopularSets/>*/}
+            <Advantages/>
+            <OurFair/>
+            <PopularSets/>
         </div>
     );
 };
