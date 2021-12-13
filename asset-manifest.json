@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/sreda_react_website/static/css/main.5bedf399.chunk.css",
-    "main.js": "/sreda_react_website/static/js/main.efbd7a37.chunk.js",
-    "main.js.map": "/sreda_react_website/static/js/main.efbd7a37.chunk.js.map",
+    "main.js": "/sreda_react_website/static/js/main.d113f93d.chunk.js",
+    "main.js.map": "/sreda_react_website/static/js/main.d113f93d.chunk.js.map",
     "runtime-main.js": "/sreda_react_website/static/js/runtime-main.a1acc1e2.js",
     "runtime-main.js.map": "/sreda_react_website/static/js/runtime-main.a1acc1e2.js.map",
     "static/js/2.3c238ea1.chunk.js": "/sreda_react_website/static/js/2.3c238ea1.chunk.js",
@@ -34,6 +34,6 @@
     "static/js/runtime-main.a1acc1e2.js",
     "static/js/2.3c238ea1.chunk.js",
     "static/css/main.5bedf399.chunk.css",
-    "static/js/main.efbd7a37.chunk.js"
+    "static/js/main.d113f93d.chunk.js"
   ]
 }
