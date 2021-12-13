@@ -1,0 +1,33 @@
+
+.arrow-slide__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  column-gap: 48px;
+  padding: 8px 16px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 15px rgba(76, 91, 57, 0.12);
+  border-radius: 44px;
+  cursor: pointer;
+}
+
+.arrow-slide__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 14px 10px 16px;
+  transition: background-color .15s ease-in-out;
+  border-radius: 100%;
+
+  path {
+    transition: stroke .15s ease-in-out;
+  }
+
+  &:hover {
+    background-color: #6EA527;
+  }
+
+  &:hover path {
+    stroke: #FFFFFF;
+  }
+}

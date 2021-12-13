@@ -1,11 +1,24 @@
 import React from 'react';
 import '../../../App.css';
 import './header.css';
+import './headerAdaptive.scss';
 import logo from '../../../assets/images/logo_small.png';
 import cityIcon from '../../../assets/images/icons/city-icon.svg';
 import whatsAppIcon from '../../../assets/images/icons/whatsapp.svg';
 import squaresIcon from '../../../assets/images/icons/square-icon.svg';
 import {Link} from "react-router-dom";
+
+
+export const ArrowButton = () => {
+    return (
+        <button className="arrow__button">
+            <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.999329 12L5.99933 6.5L0.999329 1" stroke="#707070" strokeWidth="2"
+                      strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+        </button>
+    )
+}
 
 const Header = () => {
     return (
@@ -34,6 +47,7 @@ const Header = () => {
                         </button>
                     </div>
                     <div className="header__menu menu">
+                        <button className="header__button_mobile">Каталог</button>
                         <div className="menu__icon">
                             <Link to="/search">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -92,9 +106,9 @@ const Header = () => {
                                 </svg>
                             </Link>
                         </div>
-                        <div className="menu__button">
+                        <button className="menu__button">
                             <span></span>
-                        </div>
+                        </button>
                     </div>
                 </div>
                 <div className="categories">
@@ -108,12 +122,7 @@ const Header = () => {
                     <Link to="/" className="categories__link">Пробные наборы</Link>
                     <Link to="/" className="categories__link">Категория</Link>
                     <Link to="/" className="categories__link categories__link_sale">Акции</Link>
-                    <button className="arrow__button">
-                        <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0.999329 12L5.99933 6.5L0.999329 1" stroke="#707070" strokeWidth="2"
-                                  strokeLinecap="round" strokeLinejoin="round"/>
-                        </svg>
-                    </button>
+                    <ArrowButton/>
                 </div>
             </div>
         </header>

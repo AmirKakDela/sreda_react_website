@@ -1,0 +1,17 @@
+.fair__title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fair {
+  background-color: #EFEFEF;
+  padding: 75px 0 80px 0;
+}
+.fair__categories-row {
+  margin-top: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 30px;
+}
+/*# sourceMappingURL=ourFair.css.map */

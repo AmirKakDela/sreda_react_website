@@ -1,0 +1,33 @@
+.fair-category {
+  background: #FBFBFB;
+  box-shadow: 0px 5px 27px rgba(0, 0, 0, 0.07);
+  padding: 12px;
+  border-radius: 100px;
+  width: 170px;
+  height: 292px;
+  cursor: pointer;
+  overflow: hidden;
+  border: 1.5px solid #FBFBFB;
+  transition: all 0.25s ease-in-out;
+}
+.fair-category:hover {
+  border-color: #6EA527;
+}
+.fair-category:hover img {
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.15);
+}
+.fair-category img {
+  text-align: center;
+  border-radius: 100%;
+}
+.fair-category__desc {
+  margin-top: 24px;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 130%;
+  text-align: center;
+  color: #474747;
+  white-space: pre-line;
+  margin-bottom: 12px;
+}
+/*# sourceMappingURL=fairCategory.css.map */

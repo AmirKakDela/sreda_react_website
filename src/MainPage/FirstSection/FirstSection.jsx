@@ -3,9 +3,37 @@ import './firstSection.css';
 import spot from '../../assets/images/spot.svg';
 import circle from '../../assets/images/circle-first.svg';
 import circleMini from '../../assets/images/circleMini-first.svg';
-import vegetables from '../../assets/images/vege.png';
+import vege1 from '../../assets/images/vege.png';
+import vege2 from '../../assets/images/vege2.png';
+import vege3 from '../../assets/images/vege3.png';
+import ArrowSlideButton from "../components/ArrowSlideButton/ArrowSlideButton";
+
+const slideJson = [
+    {img: vege1},
+    {img: vege2},
+    {img: vege3},
+    {img: vege2},
+]
 
 const FirstSection = () => {
+    const [slide, setSlide] = React.useState(0);
+
+    const nextSlide = () => {
+        if (slide === slideJson.length - 1) {
+            console.log('work')
+            return setSlide(0);
+        }
+        return setSlide(prev => prev + 1);
+    }
+
+    const prevSlide = () => {
+        if (slide === 0) {
+            return setSlide(slideJson.length - 1);
+        }
+        return setSlide(prev => prev - 1)
+    }
+
+
     return (
         <main className="first">
             <div className="container container__first">
@@ -22,7 +50,7 @@ const FirstSection = () => {
                 </div>
                 <div className="first__image">
                     <div className="spot">
-                        <img src={vegetables} alt="" className='vegetables'/>
+                        <img src={slideJson[slide].img} alt="Овощи" className='vegetables'/>
                         <img src={spot} alt="" className="spot__first"/>
                         <img src={circleMini} alt="" className="circle-mini__first"/>
                         <img src={circle} alt="" className="circle__first"/>
@@ -33,27 +61,18 @@ const FirstSection = () => {
             <div className="first__slider slider">
                 <div className="container slider__row">
                     <div className="slider__dots">
-                        <div className="slider__dot"></div>
-                        <div className="slider__dot slider__dot__active"></div>
-                        <div className="slider__dot"></div>
-                        <div className="slider__dot"></div>
+                        {slideJson.map((s, index) => (
+                            <div className={`slider__dot ${index === slide ? 'slider__dot__active' : ''}`}
+                                 onClick={() => setSlide(index)}
+                            ></div>
+                        ))}
                     </div>
-                    <div className="arrow-slide__row">
-                        <div className="arrow-slide__button _prev">
-                            <svg width="14" height="24" viewBox="0 0 14 24" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 22L2 12L12 2" stroke="#4B4B4B" stroke-width="3" stroke-linecap="round"
-                                      stroke-linejoin="round"/>
-                            </svg>
-                        </div>
-                        <div className="arrow-slide__button _next">
-                            <svg width="14" height="24" viewBox="0 0 14 24" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                <path d="M2 22L12 12L2 2" stroke="#4B4B4B" stroke-width="3" stroke-linecap="round"
-                                      stroke-linejoin="round"/>
-                            </svg>
-                        </div>
-                    </div>
+                    <button className="first__button_mobile button ">
+                        В каталог
+                    </button>
+                    <span className="first__arrow-buttons_wrap">
+                    <ArrowSlideButton nextSlide={nextSlide} prevSlide={prevSlide}/>
+                    </span>
                 </div>
             </div>
         </main>

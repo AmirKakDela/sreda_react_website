@@ -1,0 +1,116 @@
+.popular-sets {
+  background: #F5F5F5;
+  padding: 75px;
+  height: 798px;
+}
+.container__popular-sets {
+  position: absolute;
+  max-width: 80vw;
+  margin: 0 auto;
+}
+.popular-sets__title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+.popular-sets__wrapper {
+  display: flex;
+  align-items: center;
+}
+.popular-sets__wrapper .popular-sets__title {
+  margin-right: 32px;
+}
+.sets__row {
+  display: flex;
+  align-content: center;
+  column-gap: 29px;
+  overflow-x: hidden;
+  border-radius: 30px;
+  padding: 30px 0;
+}
+.set {
+  min-width: 370px;
+  height: 452px;
+  box-shadow: 0px 12px 32px rgba(87, 74, 27, 0.11);
+  border-radius: 30px;
+  padding: 40px 28px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.2s transform ease-in-out;
+}
+.set:hover {
+  transform: translateY(-6px);
+}
+.set__yellow {
+  background-color: #FCEBAE;
+}
+.set__yellow .set__image-wrapper {
+  background-color: #FAE189;
+}
+.set__pink {
+  background-color: #FDE1E1;
+}
+.set__pink .set__image-wrapper {
+  background-color: #F8CCC5;
+}
+.set__green {
+  background-color: #E7F6BA;
+}
+.set__green .set__image-wrapper {
+  background-color: #AFD365;
+}
+.set__wrapper {
+  position: relative;
+}
+.set__title {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 100%;
+  color: #474747;
+}
+.set__image-wrapper {
+  width: 312px;
+  height: 310px;
+  border-radius: 100%;
+  position: absolute;
+  bottom: -55px;
+}
+.set__image-wrapper img {
+  position: relative;
+  top: 25px;
+}
+.arrow__button_set {
+  width: 56px;
+  height: 56px;
+  padding: 20px;
+  background-color: #FFFFFF;
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+}
+.arrow__button_set svg path {
+  stroke: #474747;
+}
+.set__price {
+  background: #FFFFFF;
+  border-radius: 20px 20px 0px 20px;
+  padding: 12px 20px;
+  width: 172px;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 100%;
+  color: #474747;
+  z-index: 1;
+  position: absolute;
+  right: 28px;
+  top: 150px;
+}
+.set__hit-sales {
+  position: absolute;
+  right: -7px;
+  top: -25px;
+  z-index: 100;
+}
+/*# sourceMappingURL=popularSets.css.map */

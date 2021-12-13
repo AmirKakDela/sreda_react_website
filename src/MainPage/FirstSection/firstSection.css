@@ -50,6 +50,16 @@
   position: relative;
   left: 10px;
 }
+.first__button_mobile {
+  display: none;
+  background: #6EA527;
+  border-radius: 28px;
+  padding: 16px 56px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 130%;
+  color: #FFFFFF;
+}
 .spot {
   position: relative;
   right: 35px;
@@ -109,32 +119,71 @@
   left: -8px;
   top: -8px;
 }
-.arrow-slide__row {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  column-gap: 48px;
-  padding: 8px 16px;
-  background: #FFFFFF;
-  box-shadow: 0px 4px 15px rgba(76, 91, 57, 0.12);
-  border-radius: 44px;
-  cursor: pointer;
+@media (max-width: 1000px) {
+  .container__first {
+    flex-direction: column-reverse;
+  }
+  .first__image {
+    align-content: center;
+  }
+  .spot {
+    left: 30%;
+  }
+  .circle-mini__first {
+    left: -200px;
+    top: auto;
+    bottom: 100px;
+  }
+  .circle__first {
+    top: -110px;
+    left: 30%;
+  }
+  .first__arrow-buttons_wrap {
+    display: none;
+  }
+  .first__button_mobile {
+    display: block;
+  }
+  .first__button {
+    display: none;
+  }
+  .slider__row {
+    margin-top: 25px;
+    flex-direction: row-reverse;
+  }
 }
-.arrow-slide__button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 14px 10px 16px;
-  transition: background-color 0.15s ease-in-out;
-  border-radius: 100%;
+@media (max-width: 600px) {
+  .spot {
+    left: 20%;
+    top: -70px;
+    margin-top: -70px;
+  }
+  .vegetables {
+    width: 350px;
+    bottom: 20px;
+  }
+  .circle-mini__first {
+    left: -100px;
+    top: auto;
+    bottom: 100px;
+  }
+  .circle__first {
+    top: 30px;
+    left: 0;
+  }
+  .first__title {
+    margin-top: -30px;
+    font-size: 36px;
+    line-height: 110%;
+  }
 }
-.arrow-slide__button path {
-  transition: stroke 0.15s ease-in-out;
-}
-.arrow-slide__button:hover {
-  background-color: #6EA527;
-}
-.arrow-slide__button:hover path {
-  stroke: #FFFFFF;
+@media (max-width: 390px) {
+  .vegetables {
+    bottom: 20px;
+    left: -20px;
+  }
+  .first__button_mobile {
+    padding: 8px 40px;
+  }
 }
 /*# sourceMappingURL=firstSection.css.map */
