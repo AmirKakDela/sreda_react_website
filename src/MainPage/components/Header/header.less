@@ -103,7 +103,7 @@
 
 .menu {
   background-color: #FFFFFF;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
   border-radius: 30px;
   display: flex;
   justify-content: center;
@@ -122,15 +122,15 @@
     transition: all .15s ease-in-out;
   }
 
-  &:nth-child(1):hover path {
+  &:nth-child(2):hover path {
     stroke: #6EA527;
   }
 
-  &:nth-child(2):hover path {
+  &:nth-child(3):hover path {
     fill: #6EA527;
   }
 
-  &:nth-child(3):hover {
+  &:nth-child(4):hover {
     svg {
       fill: transparent;
     }
@@ -138,10 +138,9 @@
     path[fill-rule="evenodd"] {
       fill: #6EA527;
     }
-
   }
 
-  &:nth-child(4):hover path {
+  &:nth-child(5):hover path {
     fill: #6EA527;
   }
 }
@@ -226,11 +225,17 @@
   font-size: 14px;
   line-height: 130%;
   color: #FFFFFF;
+  transition: background-color .15s ease-in-out;
+
+  &:hover {
+    background-color: #538317;
+  }
+
 }
 
 .categories {
   background: #FFFFFF;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
   border-radius: 30px;
   margin-top: 22px;
   padding: 4px;
@@ -359,14 +364,14 @@
     transition: background-color .15s ease-in-out;
 
     &:hover {
-      background-color: #6EA527;
+      background-color: transparent;
     }
 
     &:hover span {
-      background-color: #FFFFFF;
+      background-color: #6EA527;
 
       &:after, &:before {
-        background-color: #FFFFFF;
+        background-color: #6EA527;
       }
     }
 
